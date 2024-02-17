@@ -24,23 +24,28 @@ var createNewTaskElement=function(taskString){
   //input (text)
   var editInput=document.createElement("input");//text
   //button.edit
-  var editButton=document.createElement("button");//edit button
+  var editButton=document.createElement("form__edit-btn");//edit button
 
   //button.delete
   var deleteButton=document.createElement("button");//delete button
   var deleteButtonImg=document.createElement("img");//delete button image
 
+  listItem.className="form__item form__task-item";
+
   label.innerText=taskString;
-  label.className="task";
+  label.className="form__label";
 
   //Each elements, needs appending
   checkBox.type="checkbox";
+  checkBox.classList="form__checkbox form__task-checkbox";
   editInput.type="text";
-  editInput.className="task";
+  editInput.className="form__input form__task-name";
   editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
-  editButton.className="edit";
-  deleteButton.className="delete";
+  editButton.className="form__button form__edit-btn";
+  deleteButton.className="form__button form__delete-btn";
   deleteButtonImg.src="./remove.svg";
+  deleteButton.setAttribute("alt", "Delete");
+  deleteButton.classList.add("form__icon");
   deleteButton.appendChild(deleteButtonImg);
 
   //and appending.
@@ -130,7 +135,7 @@ var ajaxRequest=function(){
 //The glue to hold it all together.
 
 //Set the click handler to the addTask function.
-addButton.onclick=addTask;
+// addButton.onclick=addTask;
 addButton.addEventListener("click",addTask);
 addButton.addEventListener("click",ajaxRequest);
 
@@ -139,8 +144,8 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
   console.log("bind list item events");
   //select ListItems children
   var checkBox=taskListItem.querySelector("input[type=checkbox]");
-  var editButton=taskListItem.querySelector("button.edit");
-  var deleteButton=taskListItem.querySelector("button.delete");
+  var editButton=taskListItem.querySelector("button.form__edit-btn");
+  var deleteButton=taskListItem.querySelector("button.form__delete-btn");
 
   //Bind editTask to edit button.
   editButton.onclick=editTask;

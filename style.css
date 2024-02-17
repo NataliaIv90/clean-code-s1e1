@@ -4,34 +4,36 @@ body {
   color: #333;
   font-family: Lato, sans-serif;
 }
-.aaa {
+.header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.aaa img {
+.header img {
   width: 100%;
 }
-.aaa .more_inf {
+.header .header_link {
   font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
-.aaa { text-align: center;
-}
-}
-.centered-main-page-element {
-  display: block;
-  width: 500px;
-  margin: 0 auto 0;
-}
 .task {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
-.task-row-wrapper {
+
+@media (max-width:768px) {
+.header { text-align: center;
+}
+}
+.form {
+  display: block;
+  width: 500px;
+  margin: 0 auto 0;
+}
+
+.new-task__input-wrapper {
   display: flex;
 }
 ul {
