@@ -49,12 +49,12 @@
 
 .form__task-item,
 .form__title {
-  list-style:none;
+  list-style: none;
 }
 
 .form__input,
-.form__btn{
-  outline:none;
+.form__btn {
+  outline: none;
 }
 
 .form__btn {
@@ -111,7 +111,7 @@
 }
 
 /* Task list */
-.form__task-item{
+.form__task-item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -157,14 +157,14 @@
 
 /* Edit Task */
 .form__task-item .form__input_text {
-  display:none
+  display: none
 }
 
 .form__task-item_edit-mode .form__input_text {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 .form__task-item_edit-mode .form__label{
-  display:none;
+  display: none;
 }
