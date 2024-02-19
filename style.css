@@ -23,7 +23,7 @@
 .form__task-name {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 @media (max-width:768px) {
@@ -136,7 +136,7 @@
 }
 
 .form__task-item > .form__input_text {
-  width: 226px
+  width: 226px;
 }
 
 .form__delete-btn-icon {
@@ -151,18 +151,18 @@
 
 /* Completed */
 #completed-tasks .form__label {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 .form__task-item .form__input_text {
-  display: none
+  display: none;
 }
 
 .form__task-item_edit-mode .form__input_text {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 .form__task-item_edit-mode .form__label{
