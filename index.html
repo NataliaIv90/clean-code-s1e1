@@ -13,11 +13,11 @@
     charset="utf-8"
   >
 </head>
-<body>
+<body class="body">
   <div class="header">
-    <img src="./eisenhower-matrix.jpg">
+    <img class="header__img" src="./eisenhower-matrix.jpg">
     <a
-      class="header_link"
+      class="header__link"
       href="https://goal-life.com/page/method/matrix-eisenhower"
     >
       Want more details?
@@ -27,14 +27,14 @@
     <p id="form__new-task">
       <label
         for="new-task"
-        class="form__label"
+        class="form__label form__label_new-task"
       >
         Add Item
       </label>
       <div class="form__input-wrapper">
         <input
           id="new-task"
-          class="form__input form__task"
+          class="form__input form__input_text form__task form__task_new"
           type="text"
         >
         <button class="form__btn form__add-btn">Add</button>
@@ -53,14 +53,14 @@
         <label class="form__label form__task-name">Pay Bills</label>
         <input
           type="text"
-          class="form__input form__task-name"
+          class="form__input form__input_text form__task-name"
         >
         <button class="form__btn form__edit-btn">Edit</button>
         <button class="form__btn form__delete-btn">
           <img
             src="./remove.svg"
             alt="Delete"
-            class="form__icon"
+            class="form__delete-btn-icon"
           >
         </button>
       </li>
@@ -74,14 +74,14 @@
         <input
           type="text"
           value="Go Shopping"
-          class="form__input form__task-name"
+          class="form__input form__input_text form__task-name"
         >
         <button class="form__btn form__edit-btn">Save</button>
         <button class="form__btn form__delete-btn">
           <img
             src="./remove.svg"
             alt="Delete"
-            class="form__icon"
+            class="form__delete-btn-icon"
           >
         </button>
       </li>
@@ -98,17 +98,17 @@
             checked
             class="form__checkbox"
           >
-          <label class="form__label form__task-name">See the Doctor</label>
+          <label class="form__label form__label_done form__task-name">See the Doctor</label>
           <input
             type="text"
-            class="form__input form__task-name"
+            class="form__input form__input_text form__task-name"
           >
           <button class="form__btn form__edit-btn">Edit</button>
           <button class="form__btn form__delete-btn">
             <img
               src="./remove.svg"
               alt="Delete"
-              class="form__icon"
+              class="form__delete-btn-icon"
             >
           </button>
         </li>        
