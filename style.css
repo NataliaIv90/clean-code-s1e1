@@ -101,6 +101,7 @@
 }
 
 /* New Task */
+
 .form__label_new-task {
   display: block;
   margin: 0 0 20px;
@@ -111,6 +112,7 @@
 }
 
 /* Task list */
+
 .form__task-item {
   overflow: hidden;
   padding: 20px 0;
@@ -150,12 +152,14 @@
 }
 
 /* Completed */
+
 #completed-tasks .form__label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
+
 .form__task-item .form__input_text {
   display: none;
 }
